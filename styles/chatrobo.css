@@ -1,0 +1,15 @@
+.chatroboon{
+    display: none;
+    height: 37rem;
+    transition: display 2s ease-in;
+    
+}
+.chatrobo{
+    cursor: pointer;
+}
+.chatclear{
+    
+    /* border: 1px solid red; */
+    cursor: pointer;
+    /* height: 0rem; */
+}
