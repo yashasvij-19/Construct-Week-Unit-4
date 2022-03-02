@@ -62,7 +62,7 @@ const navbar = ()=>{
                     <li onmouseover="show9()" onmouseleave="hide9()"><a href="">Men</a></li>
                     <li onmouseover="show10()" onmouseleave="hide10()"><a href="">Fragrance</a></li>
                     <li onmouseover="show11()" onmouseleave="hide11()"><a href="">LUXE</a></li>
-                    <li > <a href=""><img src="/menusprite.png" alt=""></a> </li>
+                    <li > <a href=""><img src="./images/menusprite.png" alt=""></a> </li>
                 </ul>
             </div>
             <div onmouseover="show1()" onmouseleave="hide1()" class="head-btm-pop1">
