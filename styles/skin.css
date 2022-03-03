@@ -1,0 +1,55 @@
+.skin-slideshow-container {
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+    z-index:-1;
+  }
+
+  .skin-dot {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: rgb(190, 151, 187);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.5s ease;
+  }
+
+  .skin-prev, .skin-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: white;
+  }
+  .skin-prev{
+    align-items: center;
+    left:1em;
+    border-radius: 50%;
+    width:3em;
+
+  }
+
+  .skin-next {
+    right: 1em;
+    border-radius: 50%;
+    width: 3em;
+  }
+
+  .skin-active {
+    background-color: #e684d9;
+  }
+  
+  .skin-fade {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+  }
