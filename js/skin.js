@@ -5,16 +5,10 @@ header.innerHTML = navbar();
 
 
 let slideIndex = 0;
-function plusSlides(){
-slideIndex--;    
-}
-function plusSlides1(){
-    slideIndex++;    
-    }
 showSlides();
 function showSlides() {
     let i;
-    let slides = document.getElementsByClassName("mySlides");
+    let slides = document.getElementsByClassName("skin-mySlides");
     let dots = document.getElementsByClassName("skin-dot");
     for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";  
@@ -28,3 +22,5 @@ function showSlides() {
     dots[slideIndex-1].className += " skin-active";
     setTimeout(showSlides, 2000);
   }
+
+  console.log("successful");
