@@ -212,7 +212,7 @@ background-color: white;
     display:grid;
     grid-template-columns: repeat(20, 2fr) ;
     margin: auto;
-    width: 90%;
+    width: 100%;
     
   }
  .slider> div {
