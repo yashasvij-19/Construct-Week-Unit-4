@@ -217,7 +217,7 @@ background-color: white;
   }
  .slider> div {
     cursor: pointer;
-    margin:10px;
+    margin:.5rem;
     position: relative;
     width: 900%;
     left: 0;
@@ -248,12 +248,12 @@ background-color: white;
       left: -300%;
     }
     70% {
-      left: -400%;
+      left: -350%;
     }
     75% {
-      left: -500%;
+      left: -400%;
     }
     95% {
-      left: -600%;
+      left: -500%;
     }
   }
