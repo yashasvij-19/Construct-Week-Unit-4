@@ -159,4 +159,19 @@ function hide12(){
 //     div1.append(cross)
 //     div.append(div1);
 //     document.body.append(div);
-// })
+ window.onscroll = function() {myFunction()};
+
+function myFunction() {
+    
+  if (document.body.scrollTop >= 1 || document.documentElement.scrollTop >= 2) {
+    console.log("1")
+    // document.querySelector(".header-bottom").display = 'none'
+    console.log("scroledd")
+    let btm = document.querySelector(".header-bottom");
+    console.log(btm)
+    btm.style.display = "none";
+  } else {
+    let btm = document.querySelector(".header-bottom");
+    btm.style.display = "flex";
+  }
+}

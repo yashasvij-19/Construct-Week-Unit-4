@@ -11,9 +11,43 @@
     <link rel="stylesheet" href="/styles/navbar.css">
     <link rel="stylesheet" href="./styles/chatrobo.css">
     <link rel="icon" href="//images-static.nykaa.com/media/favicon/default/nykaa_favicon_a.png" type="image/x-icon">
+
+
+
+    <!-- for this page particulary -->
+    <link rel="stylesheet" href="/styles/products.css">
     <title>Products page</title>
 </head>
 <body>
+    
     <div id="header"></div>
+    <div class="cartpage"></div>
+    <div class="body">
+        
+        <span class="pagelocation">Products page</span>
+        <div class="carousel">CAROUSEL</div>
+        <h3>All Products</h3>
+        <div class="prodcutlist">
+            <div class="leftproduct">
+                <h5>Sort By MRP</h5>
+                <select name="select" class="filtering"  id="sort">
+                    <option value="">PRICE WISE SORTING</option>
+                    <option value="asc">SORT IN ASCENDING</option>
+                    <option value="dsc">SORT IN DESCENDING</option>
+                </select>
+                <select style="background-color: red;" name="select" class="filtering">
+                    <option value="">Launching soon other filters</option>
+                    <!-- <option value="asc">name</option>
+                    <option value="dsc">SORT IN DESCENDING</option> -->
+                </select>
+                
+                
+
+
+            </div>
+            <div class="rightproduct"></div>
+        </div>
+        
+    </div>
 </body>
 </html>

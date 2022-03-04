@@ -13,3 +13,13 @@ chatclear.addEventListener("click" , ()=>{
     // chatroboon.style.height = "0"
     chatroboon.style.display = "none";
 })
+
+document.addEventListener("scroll" , fixed)
+
+function fixed(){
+    let chatrobo  = document.querySelector(".chatrobo");
+  chatrobo.style.position = "fixed";
+  chatrobo.style.bottom = "0"
+   
+}
+
