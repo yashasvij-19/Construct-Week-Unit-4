@@ -224,7 +224,7 @@ background-color: white;
     font-size: 0;
     animation: 30s slider infinite;
   }
-  slider> div:hover{
+  .slider> div:hover{
     box-shadow: 0 10px 12px 0 rgb(0 0 0 / 20%), 0 .5em 2em 0 rgb(0 0 0 / 19%) !important;
   }
   .slider> div >img {

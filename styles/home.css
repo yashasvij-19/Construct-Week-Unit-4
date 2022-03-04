@@ -191,3 +191,55 @@ height:18em;
 .homepagegiftcard:hover{
     box-shadow: 0 10px 12px 0 rgb(0 0 0 / 20%), 0 .5em 2em 0 rgb(0 0 0 / 19%) !important;
 }
+.slider {
+  overflow: hidden;
+  display:grid;
+  grid-template-columns: repeat(20, 2fr) ;
+  margin: auto;
+  width: 88%;
+  
+}
+.slider> div {
+  cursor: pointer;
+  margin:.5rem;
+  position: relative;
+  width: 900%;
+  left: 0;
+  font-size: 0;
+  animation: 30s slider infinite;
+}
+.slider> div:hover{
+  box-shadow: 0 10px 12px 0 rgb(0 0 0 / 20%), 0 .5em 2em 0 rgb(0 0 0 / 19%) !important;
+}
+.slider> div >img {
+  float: left;
+  height: 20rem;
+  width: 35rem;
+
+}
+@keyframes slider {
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: -50%;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -200%;
+  }
+  50% {
+    left: -300%;
+  }
+  70% {
+    left: -350%;
+  }
+  75% {
+    left: -400%;
+  }
+  95% {
+    left: -500%;
+  }
+}
