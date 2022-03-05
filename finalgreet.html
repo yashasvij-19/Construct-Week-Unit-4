@@ -6,17 +6,18 @@
     
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
 
     <!-- for the font awesome icons --> 
     <script src="https://kit.fontawesome.com/14e21b1c67.js" crossorigin="anonymous"></script> 
-
+    
     <script src="./js/greet.js" type="module" defer></script>
     <!-- for the functioning of chatbox and navbar -->
     
     <link rel="stylesheet" href="/styles/navbar.css">
     <link rel="stylesheet" href="./styles/chatrobo.css">
     <link rel="icon" href="//images-static.nykaa.com/media/favicon/default/nykaa_favicon_a.png" type="image/x-icon">
-
+    
     <!-- add your own page js file and css file here -->
     <!-- <script src="demo.js" type="module" defer></script> -->
     <!-- <link rel="stylesheet" href="/demo.css"> -->
@@ -38,9 +39,14 @@
         </div>
     </div>
 
-    <div class="">
+    <div style="display: flex;flex-direction: column;" id="invoice">
+        <div style="display: flex;" class="top"> <div class="userleft"></div>
+        <div class="userright"></div></div>
+      
+       <div style="display: grid;grid-template-columns: repeat(3,1fr); gap: 2rem;border: 1px solid red;width: 25rem;" class="tabledata"></div>
        
     </div>
+    <button id = "download">download</button>
     
        
     </div>

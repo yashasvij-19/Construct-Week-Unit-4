@@ -1,8 +1,14 @@
 import navbar from "../components/navbar.js";
 import chatbox from "../components/chatbox.js";
+import footer from '../components/footer.js';
+import slider from '../components/slider.js';
 
 let header = document.getElementById("header");
 header.innerHTML = navbar();
+let footer1 = document.getElementById("footer");
+footer1.innerHTML = footer();
+let carousel = document.querySelector(".carousel");
+carousel.innerHTML = slider();
 
 let box = document.createElement("div");
 box.innerHTML = chatbox();

@@ -3,7 +3,7 @@ let chatclear  = document.querySelector(".chatclear");
 
 chatrobo.addEventListener("click" , ()=>{
     chatrobo.style.display = "none";
-    chatroboon = document.querySelector(".chatroboon");
+   let chatroboon = document.querySelector(".chatroboon");
     // chatroboon.style.height = "37rem"
     chatroboon.style.display = "flex";
 })
@@ -20,6 +20,9 @@ function fixed(){
     let chatrobo  = document.querySelector(".chatrobo");
   chatrobo.style.position = "fixed";
   chatrobo.style.bottom = "0"
+    let chatroboon  = document.querySelector(".chatroboon");
+  chatroboon.style.position = "fixed";
+  chatroboon.style.bottom = "2rem"
    
 }
 
