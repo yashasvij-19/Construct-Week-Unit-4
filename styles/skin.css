@@ -16,7 +16,7 @@
     transition: background-color 0.5s ease;
   }
 
-  .skin-prev, .skin-next {
+  /* .skin-prev, .skin-next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -43,7 +43,7 @@
     right: 1em;
     border-radius: 50%;
     width: 3em;
-  }
+  } */
 
   .skin-active {
     background-color: #e684d9;
@@ -158,6 +158,14 @@ background-color: white;
     margin-right: auto;
     display:grid;
     grid-template-columns: repeat(3, 1fr);      
+}
+.skin-maindiv1G{
+  margin-top: .1em;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);      
 }
 .skin-maindiv1C{
     margin-top: .1em;
