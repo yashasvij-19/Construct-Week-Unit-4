@@ -41,7 +41,8 @@ const navbar = ()=>{
             <div style="flex: 1; display: flex;text-align: left;padding-top: 1rem;" class="header-mid-acoount">
                 <div style="margin: 0 1rem;" id="accountdetails"  class="user"><span>  <a href="https://www.nykaa.com/auth?ptype=auth"><i class="fa-solid fa-user"></i> <span class="acc">Account</a>
                      </span>  </span></div>
-                <div style="margin: 0 1rem;" id="cartdetails" class="user"><span><i class="fa-solid fa-bag-shopping"></i></span></div>
+                <div style="margin: 0 1rem; position:relative" id="cartdetails" class="user"><span> <div style="position:absolute; bottom:1rem; left:0.8rem;color:rgba(251, 55, 130, 255);font-weight:700" class="cartnumber"></div> <i class="fa-solid fa-bag-shopping">
+                 </i></span></div>
             </div>
 
         </div>
