@@ -50,6 +50,9 @@ body{
     /* height: 100%; */
     width: 100%;
 }
+.productcard:hover{
+    box-shadow: 3px 1px 3px rgba(251, 55, 130, 255) ;
+}
 
 .btmcard{
     display: none;
@@ -58,15 +61,16 @@ body{
     border: none;
     
 }
+
 .productcard:hover .btmcard{
     display: flex;
     box-shadow: 1px 1px 1px grey;
 }
 .btmcard .wishlistbtn{
     flex:1;
-    background-color: white;
+    background-color: rgba(251, 55, 130, 255);;
     font-size: 2rem;
-    color: rgba(251, 55, 130, 255);
+    color: white
 }
 .btmcard .addtocartbtn{
     flex:3;
@@ -74,6 +78,11 @@ body{
     font-weight: 700;
     color: white;
 }
+.btmcard .addtocartbtn:hover , .btmcard .wishlistbtn:hover{
+    color: rgba(251, 55, 130, 255);
+    background: white;
+}
+
 .filtering{
     border: none;
     box-shadow: 1px 1px 1px grey;

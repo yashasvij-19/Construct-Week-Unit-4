@@ -33,7 +33,7 @@
         </div>
         <div class="three-section">
             <div> 1 - LOGIN</div>
-            <div> 2 - ADDRESS</div>
+            <div style="border-bottom: 3px solid red;">  2 - ADDRESS</div>
             <div>3 - PAYMENT</div>
         </div>
     </div>
@@ -42,24 +42,24 @@
         <div class="loginpop">Login/Register</div>
         <div class="guestpop">
                 <label for="country">Country</label>
-                <input type="text" id="country" name="country">
+                <input type="text" id="country" name="country" readonly required>
 
                 <label for="name">Name</label>
-                <input type="text" id="name" name="name">
+                <input type="text" id="name" name="name" required>
 
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email">
+                <input type="email" id="email" name="email" required>
 
                 <label for="number">Phone Number</label>
-                <input type="tel" id="number" name="number">
+                <input type="tel" id="number" name="number" required>
 
                 <label for="code">Postal Code</label>
-                <input type="text" id="code" name="code">
+                <input type="text" id="code" name="code" required>
 
                 <label for="add">Address</label>
-                <textarea name="add" id="add" cols="30" rows="5"></textarea>
+                <textarea name="add" id="add" cols="30" rows="5" required></textarea>
 
-                <div class="btmcartsection"> <a href=""><button>SHIP TO THIS ADDRESS ></button></a> </div>
+                <div class="btmcartsection ship"> <a href=""><button type="submit">SHIP TO THIS ADDRESS ></button></a> </div>
             </div>
 
             <div class="itemdetail">
