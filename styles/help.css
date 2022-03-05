@@ -1,0 +1,189 @@
+.help-header{
+    background-color: white;
+    padding:.7rem 10% .7rem 10%;
+}
+.help-header>a>p{
+    float:right;
+    width:fit-content;
+    align-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color:rgba(252, 39, 121, 1);
+}
+.help-header>a>p:hover{
+    color: blue;
+}
+.help-head2{
+    width:100%;
+    background-color:rgba(252, 39, 121, 1);
+    padding-top: 3.3rem;
+    padding-bottom: 3.3rem;
+    
+}
+.help-head2>div{
+    /* width: 55%; */
+    margin-left: 20%;
+    margin-right: 20%;
+    opacity: 90%;
+}
+.help-inptext{
+    height: 2.2rem;
+    width:76%;
+    margin:0;
+    border-bottom-left-radius: .3rem;
+    border-top-left-radius: .3rem;
+    border:.1rem solid rgb(238, 241, 241);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    vertical-align: middle;
+}
+.help-inpbtn{
+    height: 2.5rem;
+    width:20%;
+    margin:0rem 0rem 0rem -.2rem;
+    border-bottom-right-radius: .3rem;
+    border-top-right-radius: .3rem;
+    border:.001rem solid #dc0957;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    background-color: #dc0957;
+    vertical-align: middle;
+    color:white;
+}
+.help-div3{
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    color: rgb(27, 27, 27);
+    margin-top:0em;
+    font-weight: 200;
+    opacity: 80%;
+
+}
+.help-container{
+    position: inherit;
+    display: grid;
+    width:85%;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns:repeat(6 ,1fr) ;
+    margin-top: 2rem;
+}
+.help-container>div{
+    margin:.2rem;
+    display: flex;
+    flex-direction: column;
+    opacity: 80%;
+}
+.help-container>div>p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .8rem;
+    text-align:center;
+    color: #dc0957;
+}
+.help-container2{
+    position: inherit;
+    display: grid;
+    width:85%;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns:repeat(1 ,1fr) ;
+    margin-top: 1rem;
+}
+.help-container2>div{
+    margin:.2rem;
+    display: flex;
+    flex-direction: column;
+    opacity: 80%;
+}
+.help-container2>div>p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .8rem;
+    text-align:center;
+    color: #dc0957;
+}
+.help-div4{
+    width:85%;
+    height: .18rem;
+    background-color: #f13e80;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    opacity: 80%;
+}
+.help-div5{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    padding:2rem 0rem .5rem 0rem;
+    opacity: 90%;
+    font-size: 1rem;
+}
+.help-footertab{
+    width:85%;
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    opacity: 90%;
+    padding-top: 1rem;
+    padding-bottom: 0rem;
+}
+.help-footertab>div{
+ display: flex;
+ flex-direction: column;
+}
+.help-footertab>div>p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .9rem;
+    margin-top: 0rem;
+    margin-bottom: .4;
+}
+   .help-footertab>div>h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    margin-top: 0rem;
+    margin-bottom: .8rem;
+   }
+
+.help-footer22{
+    width: 85%;
+    display:flexbox;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding:0rem;
+    margin-bottom: 5rem;
+}
+.help-footer22>p{
+    float:left;
+    display:flex;
+    width:fit-content;
+    /* align-content: center; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .8rem;
+    color:rgb(17, 17, 17);
+    vertical-align: middle;
+    padding:.9rem;
+}
+/* .help-footer22.div{
+float: right;
+border: 1px solid black;
+padding:0rem;
+} */
+.help-footer22>div>a{
+    padding: .7rem;
+    font-size: 2rem;
+    width: 1rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius:.1rem;
+    color: #f13e80;
+    background-color: rgb(247, 247, 247);
+  }
+  .help-footer22>p>a{
+    color:#f13e80;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .8rem;
+  }
