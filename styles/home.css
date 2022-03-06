@@ -1,3 +1,11 @@
+#header{
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  /* overflow-y: hidden; */
+  z-index: 3;
+  background-color: white;
+}
 .slideshow-container {
     width: 100%;
     position: relative;
@@ -103,6 +111,75 @@
 display: flex;
 width: 70%;
 bottom:0;
+}
+
+
+.cartpage{
+  /* display: none; */
+  /* border-radius: 5px; */
+  visibility: hidden;
+  max-height: 78vh;
+  overflow-y: scroll;
+  position: absolute;
+  right: 0%;
+  top: 20vh;
+  z-index: 2;
+  /* display: none; */
+  background-color: white;
+  text-align: center;
+  border-radius: 1vw;
+  border: 2px solid  rgba(251, 55, 130, 255);
+  box-shadow: 2px 3px 3px 2px grey;
+  /* transition: scroll 10s; */
+  
+  /* min-width: 25vw; */
+
+}
+.cartcontainer{
+  /* max-width: 30%; */
+  min-height: 6rem;
+  max-height: 6rem;
+  display: flex;
+  border: 1px solid grey;
+  box-shadow: 2px 3px grey;
+  margin: 1rem;
+ 
+}
+.cartcontainer img{
+  max-width: 5vw;
+}
+.checkout{
+  background-color: rgba(251, 55, 130, 255);
+  font-weight: 700;
+  color: white;
+  min-height: 2rem ;
+  border-radius: 5px;
+  min-width: 20vw;
+  position: sticky;
+  top: 0;
+  transition: all 1s;
+  border: none;
+  outline: none;
+}
+
+.cross{
+  position: absolute;
+  right: 0;
+  font-size: x-large;
+  /* color:rgba(251, 55, 130, 255) ; */
+  outline: none;
+  border: none;
+  position: sticky;
+  top: 0;
+  border: none;
+  outline: none;
+  transition: all 1s;
+}
+.checkout:hover , .cross:hover{
+  
+  box-shadow: 1px 1px rgba(251, 55, 130, 255);
+  background-color: white;
+  color: rgba(251, 55, 130, 255);
 }
 
 .slideshow2{
@@ -242,4 +319,33 @@ height:18em;
   95% {
     left: -500%;
   }
+}
+
+::-webkit-scrollbar {
+
+  height: 5px; 
+   width: 5px;
+   border-radius: 2px;
+ }
+/* Track */
+::-webkit-scrollbar-track {
+   background: rgba(136, 136, 136, 0.137); 
+ }
+  
+ /* Handle */
+ ::-webkit-scrollbar-thumb {
+   background: rgba(251, 55, 130, 255); 
+ }
+ 
+ /* Handle on hover */
+ ::-webkit-scrollbar-thumb:hover {
+   background: #555; 
+ }
+
+.vcard:hover{
+    cursor: pointer;
+}
+
+.right:hover{
+   overflow-y: scroll;
 }

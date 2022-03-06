@@ -95,13 +95,18 @@ letter-spacing: 2px;
 <body>
     <div id = "accounT">
         <div id = "box">
-            <a href="https://www.nykaa.com/" class="close"></a>
+            <a href="./home.html" class="close"></a>
             </div>
             <div class = "top">
             <p>LOGIN / REGISTER</p>
             <hr>
             <form>
-            <input name="emailMobile" value="" placeholder="Enter Email ID or Phone Number" class="inputMail"><br>
+            <input name="country" id="country" value="Country :India" placeholder="Enter country" class="inputMail" readonly><br>
+            <input name="name" id="name" value="" placeholder="Enter name" class="inputMail name"><br>
+            <input name="mobile" id="number" value="" placeholder="Enter Phone Number" class="inputMail mobile"><br>
+            <input name="email value="" placeholder="Enter Email ID " class="inputMail email"><br>
+            <input name="postal" id="code" value="" placeholder="Enter Postal code" class="inputMail postal"><br>
+            <input name="add" id="add" value="" placeholder="Enter Address" class="inputMail add"><br>
             <span>REQUIRED</span>
             </form>
             <button type="submit" class="button big fill full " id="submitVerification">PROCEED</button>
@@ -109,3 +114,47 @@ letter-spacing: 2px;
     </div>
 </body>
 </html>
+<Script type="module">
+  let data = JSON.parse(localStorage.getItem("userdetails"))
+  if(data){
+    location.href = "./finalgreet.html"
+  }else{
+    
+let country = document.getElementById("country");
+let name = document.getElementById("name");
+let number = document.getElementById("number");
+let code = document.getElementById("code");
+let add = document.getElementById("add");
+
+
+let ship = document.querySelector("#submitVerification");
+ship.addEventListener("click", (e) => {
+  e.preventDefault();
+
+
+    
+
+    if (!name.value || !number.value || !code.value || !add.value) {
+      alert("Please fill all the details correctly");
+      // prompt("Please fill all the details correctly p")
+    } else {
+      let obj = {
+        co: country.value,
+        name: name.value,
+        number: number.value,
+        code: code.value,
+        add: add.value,
+      };
+  
+      localStorage.setItem("userdetails", JSON.stringify(obj));
+      // console.log("hello");
+      location.href = "./home.html";
+    }
+  
+
+});
+
+
+
+  }
+</Script>

@@ -175,3 +175,8 @@ function myFunction() {
     btm.style.display = "flex";
   }
 }
+
+let logo = document.querySelector(".logo");
+logo.addEventListener("click" , ()=>{
+    location.href = "./home.html"
+})
