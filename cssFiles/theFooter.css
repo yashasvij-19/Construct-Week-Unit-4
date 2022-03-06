@@ -1,0 +1,138 @@
+body{
+    margin: 0%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#first-footer{
+    display: flex;
+    background-color: #3f414d;
+    color: white;
+    padding:5%;
+}
+.mail{
+    margin-left: 7%;
+   font-size: 15px;
+   font-weight: 300;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.input{
+  margin-top: 3%;
+  margin-right: 3%;
+ background-color: #3f414d;
+}
+.submit-button{
+    background-color: #3f414d;
+    width:100px;
+    color:white;
+    height:30px;
+}
+.app{
+    margin-left:8%;
+    font-size: 16px;
+    font-weight: 300;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.appleButton{
+    margin-top: 2%;
+    height: 80px;
+    background-color: black;
+    border-radius: 10%;
+    float: right;
+}
+.appleButton a{
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+}
+.google{
+    margin-top: 2%;
+    margin-right: 10px;
+    height: 80px;
+    width:110px;
+    background-color: black;
+    border-radius: 10%;
+}
+.phone{
+    margin-left: 10%;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#second-footer p{
+    font-family: 'Praise';
+    color: white;
+    font-size: 200%;
+    float: left;
+    margin:1%;
+}
+#second-footer{
+    background-color: rgb(134, 132, 132);
+    height: 60%;
+    width: 100%;
+    padding: 2%;
+    display: flex;
+}
+.one{
+    list-style: none;
+    line-height: 200%;
+    color: white;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.one li a{
+    color: white;
+    text-decoration: none;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.one a:hover{
+    color: rgb(248, 3, 167);
+}
+#third-footer{
+    display: flex;
+    background-color: rgb(241, 240, 234);
+    width:95%;
+    height:40%;
+    padding:3%;
+}
+.ship,.easy,.auth,.brand{
+    margin-left:5%;
+    margin-right: 5%;
+}
+.authImg,.ease,.brandImg{
+    float: left;
+    margin-right: 5%;
+}
+.truck{
+    margin-right: 10px;
+}
+.text{
+    float: right;
+}
+#last-footer{
+    width: 100%;
+    background-color: rgb(248, 3, 167);
+    color: white;
+    text-align: center;
+    padding:1%;
+}
+#last-footer  span{
+margin-left: 1%;
+margin-right: 1%;
+font-weight: 450;
+}
+#last-footer span a{
+    text-decoration: none;
+    color: white;
+}
+.small{
+    font-size: small;
+    font-weight: 100;
+
+}
+#footer i{
+margin-left: 5%;
+margin-right: 5%;
+}
+.social{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 90%;
+    font-weight: 700;
+}
