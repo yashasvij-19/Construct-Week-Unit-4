@@ -1,0 +1,18 @@
+form label , form button{
+    margin-top: 1rem;
+}
+form button{
+    color:white ;
+    background-color: rgba(251, 55, 130, 255);
+    min-height: 2rem;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    transition: background 1s ;
+}
+form button:hover{
+    color:rgba(251, 55, 130, 255) ;
+    background-color: white;
+    border: 0.5px solid rgba(251, 55, 130, 255) ;
+    box-shadow: 2px 2px rgba(251, 55, 130, 255);
+}

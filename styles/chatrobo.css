@@ -1,0 +1,19 @@
+.chatroboon{
+    display: none;
+    height: 37rem;
+    /* transition: display 2s ease-in; */
+    
+}
+.chatrobo{
+    cursor: pointer;
+    /* position:sticky; */
+    bottom: 0;
+    background-color: white;
+}
+
+.chatclear{
+    
+    /* border: 1px solid red; */
+    cursor: pointer;
+    /* height: 0rem; */
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect</title>
+    <style>
+        body{
+    background-color:  #f3f3f3;
+    font-family:Arial, Helvetica, sans-serif;
+    }
+    #accounT{
+    background: #fff;
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 4% auto 0;
+    max-width: 360px;
+    border-radius: 4% 4% 0 0;
+    border: 1px solid rgba(0,0,0,.16);
+    min-height: 600px;
+    }
+#box .close {
+  position: absolute;
+  left: 25px;
+  top: 20px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+}
+#box .close:hover {
+  opacity: 1;
+}
+#box .close:before, .close:after {
+  position: absolute;
+  left: 10px;
+  content: ' ';
+  height: 18px;
+  width: 2px;
+  background-color: #333;
+}
+#box .close:before {
+  transform: rotate(45deg);
+}
+#box .close:after {
+  transform: rotate(-45deg);
+}
+.top p{
+  text-align: center;
+  font-size: 14px;
+  font-weight: 550;
+    margin-top: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #000f1d;
+    opacity: .62;
+}
+hr{
+    background-color:rgba(0,19,37,.16);
+    width: 90%;
+    color: #001325;
+    opacity: .52;
+}
+.inputMail{
+width:80%;
+margin-left:30px;
+text-align: center;
+height: 40px;
+border:1px solid red;
+background-color: whitesmoke;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#submitVerification{
+margin-top: 50%;
+width:80%;
+margin-left:30px;
+text-align: center;
+height: 60px;
+color: white;
+background-color: rgb(248, 6, 87);
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size: medium;
+letter-spacing: 2px;
+}
+.top span{
+  font-size: 9px;
+  margin-left: 77%;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+    </style>
+    <script src="./js/accountworking.js" type="module" defer></script>
+     <link rel="icon" href="//images-static.nykaa.com/media/favicon/default/nykaa_favicon_a.png" type="image/x-icon">
+</head>
+<body>
+    <div id = "accounT">
+        <div id = "box">
+            <a href="./index.html" class="close"></a>
+            </div>
+            <div class = "top">
+            <p>LOGIN / REGISTER</p>
+            <hr>
+            <form>
+            <input name="country" id="country" value="Country :India" placeholder="Enter country" class="inputMail" readonly><br>
+            <input name="name" id="name" value="" placeholder="Enter name" class="inputMail name"><br>
+            <input name="mobile" id="number" value="" placeholder="Enter Phone Number" class="inputMail mobile"><br>
+            <input name="email value="" placeholder="Enter Email ID " class="inputMail email"><br>
+            <input name="postal" id="code" value="" placeholder="Enter Postal code" class="inputMail postal"><br>
+            <input name="add" id="add" value="" placeholder="Enter Address" class="inputMail add"><br>
+            <span>REQUIRED</span>
+            </form>
+            <button type="submit" class="button big fill full " id="submitVerification">PROCEED</button>
+            </div>
+    </div>
+</body>
+</html>
+<!-- <Script type="module">
+  
+</Script> -->

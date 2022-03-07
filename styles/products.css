@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Source Sans Pro", sans-serif;
+    /* overflow: scroll; */
+}
+
+.prodcutlist{
+    display: flex;
+    /* border: 1px solid blue; */
+}
+.body{
+    text-align: center;
+}
+#header{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    /* overflow-y: hidden; */
+    z-index: 3;
+     background-color: white; 
+  } 
+
+.leftproduct{
+    flex: 1;
+}
+.rightproduct{
+    flex: 4;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+/* .productcard{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    
+}
+.btmcard{
+    justify-content: space-around;
+    /* width: 100%; */
+    /* border: 1px solid blue; */
+    
+/* }  */
+.productcard{
+    margin: 1rem;
+    max-width: 15vw;
+    min-height: 20vw;
+    /* max-height: 20vw; */
+    text-align: center;
+    box-shadow: 1px 1px 1px 1px grey;
+}
+.productcard img{
+    /* height: 100%; */
+    width: 100%;
+}
+.productcard:hover{
+    box-shadow: 3px 1px 3px rgba(251, 55, 130, 255) ;
+}
+
+.btmcard{
+    display: none;
+    min-height: 2.5vw;
+    outline: none;
+    border: none;
+    
+    
+}
+
+.productcard:hover .btmcard{
+    display: flex;
+    box-shadow: 1px 1px 1px grey;
+}
+.btmcard .wishlistbtn{
+    flex:1;
+    background-color: rgba(251, 55, 130, 255);;
+    font-size: 2vw;
+    color: white
+}
+.btmcard .addtocartbtn{
+    flex:3;
+    background-color: rgba(251, 55, 130, 255);
+    font-weight: 700;
+    color: white;
+    font-size: 1vw;
+}
+.btmcard .addtocartbtn:hover , .btmcard .wishlistbtn:hover{
+    color: rgba(251, 55, 130, 255);
+    background: white;
+}
+
+.filtering{
+    border: none;
+    box-shadow: 1px 1px 1px grey;
+    height: 1.5rem;
+    border-bottom: 1px solid rgba(196, 192, 193, 0.5);
+    margin-bottom: 2px;
+    padding: 0.2rem;
+    font-weight: 700;
+    min-width: 15vw;
+    font-family: "Source Sans Pro", sans-serif;
+}
+/* .cartnumber{
+    /* border:1px solid blue; */
+/* } */ 
+
+.cartpage{
+    /* display: none; */
+    /* border-radius: 5px; */
+    visibility: hidden;
+    max-height: 78vh;
+    overflow-y: scroll;
+    position: absolute;
+    right: 0%;
+    top: 20vh;
+    z-index: 2;
+    /* display: none; */
+    background-color: white;
+    text-align: center;
+    border: 2px solid grey;
+    box-shadow: 2px 3px 3px 2px grey;
+}
+.cartcontainer{
+    /* max-width: 30%; */
+    min-height: 6rem;
+    max-height: 6rem;
+    display: flex;
+    border: 1px solid grey;
+    box-shadow: 2px 3px grey;
+    margin: 1rem;
+    justify-content: center;
+}
+.cartcontainer img{
+    max-width: 5vw;
+}
+.checkout{
+    background-color: rgba(251, 55, 130, 255);
+    font-weight: 700;
+    color: white;
+    min-height: 2rem ;
+    border-radius: 5px;
+    min-width: 20vw;
+    position: sticky;
+    top: 0;
+    transition: all 1s;
+    border: none;
+    outline: none;
+  }
+  
+  .cross{
+    position: absolute;
+    right: 0;
+    font-size: x-large;
+    /* color:rgba(251, 55, 130, 255) ; */
+    outline: none;
+    border: none;
+    position: sticky;
+    top: 0;
+    border: none;
+    outline: none;
+    transition: all 1s;
+  }
+  .checkout:hover , .cross:hover{
+    
+    box-shadow: 1px 1px rgba(251, 55, 130, 255);
+    background-color: white;
+    color: rgba(251, 55, 130, 255);
+  }
+
+::-webkit-scrollbar {
+
+    height: 5px; 
+     width: 5px;
+     border-radius: 2px;
+   }
+ /* Track */
+ ::-webkit-scrollbar-track {
+     background: rgba(136, 136, 136, 0.137); 
+   }
+    
+   /* Handle */
+   ::-webkit-scrollbar-thumb {
+     background: rgba(251, 55, 130, 255); 
+   }
+   
+   /* Handle on hover */
+   ::-webkit-scrollbar-thumb:hover {
+     background: #555; 
+   }
+ 
+  .vcard:hover{
+      cursor: pointer;
+  }
+ 
+  .right:hover{
+     overflow-y: scroll;
+  }
+  @media screen and (max-width:700px) {
+      
+     .btmcard{
+         display: flex;
+     } 
+     .filtering{
+         max-width: 100px;
+         /* overflow-x: hidden; */
+     }
+     #footer{
+         visibility: hidden;
+     }
+     
+     
+  }
