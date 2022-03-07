@@ -17,6 +17,14 @@ body{
 .body{
     text-align: center;
 }
+#header{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    /* overflow-y: hidden; */
+    z-index: 3;
+     background-color: white; 
+  } 
 
 .leftproduct{
     flex: 1;
@@ -41,8 +49,9 @@ body{
 /* }  */
 .productcard{
     margin: 1rem;
-    max-width: 15rem;
-    min-height: 20rem;
+    max-width: 15vw;
+    min-height: 20vw;
+    /* max-height: 20vw; */
     text-align: center;
     box-shadow: 1px 1px 1px 1px grey;
 }
@@ -56,9 +65,10 @@ body{
 
 .btmcard{
     display: none;
-    min-height: 2.5rem;
+    min-height: 2.5vw;
     outline: none;
     border: none;
+    
     
 }
 
@@ -69,7 +79,7 @@ body{
 .btmcard .wishlistbtn{
     flex:1;
     background-color: rgba(251, 55, 130, 255);;
-    font-size: 2rem;
+    font-size: 2vw;
     color: white
 }
 .btmcard .addtocartbtn{
@@ -77,6 +87,7 @@ body{
     background-color: rgba(251, 55, 130, 255);
     font-weight: 700;
     color: white;
+    font-size: 1vw;
 }
 .btmcard .addtocartbtn:hover , .btmcard .wishlistbtn:hover{
     color: rgba(251, 55, 130, 255);
@@ -91,7 +102,7 @@ body{
     margin-bottom: 2px;
     padding: 0.2rem;
     font-weight: 700;
-    min-width: 15rem;
+    min-width: 15vw;
     font-family: "Source Sans Pro", sans-serif;
 }
 /* .cartnumber{
@@ -106,6 +117,7 @@ body{
     overflow-y: scroll;
     position: absolute;
     right: 0%;
+    top: 20vh;
     z-index: 2;
     /* display: none; */
     background-color: white;
@@ -121,6 +133,10 @@ body{
     border: 1px solid grey;
     box-shadow: 2px 3px grey;
     margin: 1rem;
+    justify-content: center;
+}
+.cartcontainer img{
+    max-width: 5vw;
 }
 .checkout{
     background-color: rgba(251, 55, 130, 255);
@@ -128,16 +144,33 @@ body{
     color: white;
     min-height: 2rem ;
     border-radius: 5px;
-}
-
-.cross{
+    min-width: 20vw;
+    position: sticky;
+    top: 0;
+    transition: all 1s;
+    border: none;
+    outline: none;
+  }
+  
+  .cross{
     position: absolute;
     right: 0;
     font-size: x-large;
-    color:rgba(251, 55, 130, 255) ;
+    /* color:rgba(251, 55, 130, 255) ; */
     outline: none;
     border: none;
-}
+    position: sticky;
+    top: 0;
+    border: none;
+    outline: none;
+    transition: all 1s;
+  }
+  .checkout:hover , .cross:hover{
+    
+    box-shadow: 1px 1px rgba(251, 55, 130, 255);
+    background-color: white;
+    color: rgba(251, 55, 130, 255);
+  }
 
 ::-webkit-scrollbar {
 
@@ -166,4 +199,19 @@ body{
  
   .right:hover{
      overflow-y: scroll;
+  }
+  @media screen and (max-width:700px) {
+      
+     .btmcard{
+         display: flex;
+     } 
+     .filtering{
+         max-width: 100px;
+         /* overflow-x: hidden; */
+     }
+     #footer{
+         visibility: hidden;
+     }
+     
+     
   }

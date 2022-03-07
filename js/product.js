@@ -1,12 +1,12 @@
 import navbar from "../components/navbar.js";
 import chatbox from "../components/chatbox.js";
-import footer from '../components/footer.js';
 import slider from '../components/slider.js';
+import footer from '../components/footer.js';
+let footer1 = document.getElementById("footer");
+footer1.innerHTML = footer();
 
 let header = document.getElementById("header");
 header.innerHTML = navbar();
-let footer1 = document.getElementById("footer");
-footer1.innerHTML = footer();
 let carousel = document.querySelector(".carousel");
 carousel.innerHTML = slider();
 
@@ -172,7 +172,23 @@ function cartcontainer(cartdata){
   btn1.setAttribute("class" , "cross");
   btn.addEventListener("click" , ()=>{
 
-    location.href = "/cartpage.html"
+    
+    let cdata = JSON.parse(localStorage.getItem("cartdata"))
+      let udata = JSON.parse(localStorage.getItem("userdetails"));
+      if(!cdata){
+        alert("Please add some products to check")
+      }
+
+      else if(!udata){
+        location.href = "/cartpage.html"
+        // console.log(bolo)
+      }else{
+        location.href = "./guestpageregister.html";
+        
+      }
+
+
+
   })
   btn1.addEventListener("click" , ()=>{
 

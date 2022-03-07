@@ -1,4 +1,25 @@
 let cartdata = JSON.parse(localStorage.getItem("cartdata"));
+let userdata = JSON.parse(localStorage.getItem("userdetails"));
+
+if(userdata){
+  let country = document.getElementById("country");
+let name = document.getElementById("name");
+let number = document.getElementById("number");
+let code = document.getElementById("code");
+let add = document.getElementById("add");
+
+
+country.value = userdata.co;
+name.value = userdata.name;
+number.value = userdata.number; 
+code.value = userdata.code;
+add.value = userdata.add;
+
+prompt("Kindly check the data and proceed for payment")
+}
+
+
+
 
 if (cartdata) {
   let tophead = document.querySelector(".tophead");
@@ -62,3 +83,7 @@ ship.addEventListener("click", (e) => {
 });
 
 
+let logo = document.querySelector(".logo");
+logo.addEventListener("click" , ()=>{
+    location.href = "./index.html"
+})
