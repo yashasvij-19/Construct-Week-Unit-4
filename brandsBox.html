@@ -36,7 +36,12 @@
             width:150%;
         }
         #nameS{
-            margin: 1%;
+          margin: 1%;
+          font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #nameS a,#listS a{
+            text-decoration: none;
+            color: black;
         }
         #listS{
             margin-left:50%;
@@ -53,7 +58,7 @@
             height: 40px;
             border:none;
         }
-        .brandBox{
+        .brandBox,.brandBoxOne,.brandBoxTwo,.brandBoxThree{
             display:grid;
             grid-template-columns: repeat(4,1fr);
             margin-top: 5%;
@@ -490,7 +495,7 @@
     <img src = "https://adn-static2.nykaa.com/media/wysiwyg/2020/BrandslogoMenubar/Herbal-Essences.png"/>
     <img src = "https://adn-static2.nykaa.com/media/wysiwyg/2019/niveaa.png"/>
     </div>
-    <div class = "brandBox">
+    <div class = "brandBoxOne">
        <img src = "https://adn-static2.nykaa.com/media/wysiwyg/2020/BrandslogoMenubar/mcaffeine.png"/>
        <img src = "https://adn-static2.nykaa.com/media/wysiwyg/2019/Mamaearth.png"/>
        <img src = "https://adn-static2.nykaa.com/media/wysiwyg/2020/BrandslogoMenubar/skinrx_logo.png"/>
@@ -508,7 +513,7 @@
        <img src = "https://adn-static2.nykaa.com/media/wysiwyg/2020/BrandslogoMenubar/L.A.-Girl.png"/>
        <img src = "https://adn-static2.nykaa.com/media/wysiwyg/2019/innisfree_New.png"/>
         </div>
-        <div class = "brandBox">
+        <div class = "brandBoxTwo">
         <img src = "https://adn-static1.nykaa.com/media/wysiwyg/2020/NYKD_logos.png?1?lkkl"/>
         <img src = "https://adn-static2.nykaa.com/media/wysiwyg/2018/Kiehls.png"/>
         <img src = "https://adn-static2.nykaa.com/media/wysiwyg/2020/BrandslogoMenubar/SigmaBeauty.png"/>
@@ -526,7 +531,7 @@
         <img src = "https://adn-static2.nykaa.com/media/wysiwyg/2020/BrandslogoMenubar/skinrx_logo.png"/>
         <img src = "https://adn-static2.nykaa.com/media/wysiwyg/2020/BrandslogoMenubar/skinrx_logo.png"/>
         </div>
-        <div class = "brandBox">
+        <div class = "brandBoxThree">
             <img src = "https://adn-static1.nykaa.com/media/wysiwyg/2020/NYKD_logos.png?1?lkkl"/>
             <img src = "https://adn-static2.nykaa.com/media/wysiwyg/2018/Kiehls.png"/>
             <img src = "https://adn-static2.nykaa.com/media/wysiwyg/2020/BrandslogoMenubar/SigmaBeauty.png"/>
@@ -546,5 +551,22 @@
             </div>
     </div>
     </div>
+    <script>
+    var btnsOne = document.getElementsByClassName("brandBox");
+    var btnsTwo = document.getElementsByClassName("brandBoxOne");
+    var btnsThree = document.getElementsByClassName("brandBoxTwo");
+    var btnsFour = document.getElementsByClassName("brandBoxThree");
+    var overOne = document.getElementsByClassName("buttonOne");
+    var overTwo = document.getElementsByClassName("buttonTwo");
+    var overThree = document.getElementsByClassName("buttonThree");
+    var overFour = document.getElementsByClassName("buttonFour");
+
+    function oneFunc(){
+      btnsTwo.style.display = "none";
+      btnsThree.style.display = "none";
+      btnsFour.style.display = "none";
+    }
+    overOne.addEventListener("onmouseover",onefunc());
+    </script>
 </body>
 </html>
